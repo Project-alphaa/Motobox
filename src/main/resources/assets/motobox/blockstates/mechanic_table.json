@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "motobox:block/mechanic_table"
+    }
+  }
+}

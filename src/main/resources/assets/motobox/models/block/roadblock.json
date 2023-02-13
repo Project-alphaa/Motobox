@@ -1,0 +1,41 @@
+{
+	"credit": "Made with Blockbench by MincraftEinstein",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"0": "motobox:block/roadblock",
+		"particle": "motobox:block/roadblock"
+	},
+	"elements": [
+		{
+			"from": [-8, 4, 4],
+			"to": [24, 16, 12],
+			"faces": {
+				"north": {"uv": [0, 3.2, 12.7, 7.1], "texture": "#0"},
+				"east": {"uv": [12.8, 3.2, 16, 9.6], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [0, 3.2, 12.7, 7.1], "texture": "#0"},
+				"west": {"uv": [12.8, 3.2, 16, 9.6], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 3.1], "texture": "#0", "cullface": "up"}
+			}
+		},
+		{
+			"from": [-8, 0, 2],
+			"to": [24, 4, 14],
+			"faces": {
+				"north": {"uv": [0, 9.5, 12.6, 12.1], "texture": "#0"},
+				"east": {"uv": [9.7, 1.7, 16, 3.2], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [0, 9.5, 12.6, 12.1], "texture": "#0"},
+				"west": {"uv": [9.7, 1.7, 16, 3.2], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [0, 12.2, 12.7, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 12.7, 3.2], "texture": "#0", "cullface": "down"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "concrete_wall2",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

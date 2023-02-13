@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gg"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "motobox:dirt_off_road",
+    "count": 4
+  }
+}

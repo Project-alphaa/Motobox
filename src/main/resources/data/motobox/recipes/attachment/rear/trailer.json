@@ -1,0 +1,16 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:attachments",
+  "sortnum": 206,
+  "ingredients": [
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:iron_bars"},
+    {"item": "minecraft:iron_bars"},
+    {"item": "minecraft:chest"},
+    {"tag": "minecraft:logs"}
+  ],
+  "result": {
+    "item": "motobox:rear_attachment",
+    "component": "motobox:trailer"
+  }
+}

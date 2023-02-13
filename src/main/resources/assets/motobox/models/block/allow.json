@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "particle": "motobox:block/allow",
+    "all": "motobox:block/allow"
+  }
+}

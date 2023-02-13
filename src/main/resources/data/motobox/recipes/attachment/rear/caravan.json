@@ -1,0 +1,18 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:attachments",
+  "sortnum": 206,
+  "ingredients": [
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:furnace"},
+    {"item": "minecraft:chest"},
+    {"tag": "minecraft:beds"},
+    {"tag": "minecraft:doors"}
+  ],
+  "result": {
+    "item": "motobox:rear_attachment",
+    "component": "motobox:caravan"
+  }
+}

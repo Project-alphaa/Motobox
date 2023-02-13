@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " d",
+    "d "
+  ],
+  "key": {
+    "d": {
+      "item": "motobox:dash_panel"
+    }
+  },
+  "result": {
+    "item": "motobox:sloped_dash_panel",
+    "count": 2
+  }
+}

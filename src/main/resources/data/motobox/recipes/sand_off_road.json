@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gg"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "motobox:sand_off_road",
+    "count": 4
+  }
+}

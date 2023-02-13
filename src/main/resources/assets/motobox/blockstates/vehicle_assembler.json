@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "motobox:block/vehicle_assembler"
+    },
+    "facing=south": {
+      "model": "motobox:block/vehicle_assembler",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "motobox:block/vehicle_assembler",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "motobox:block/vehicle_assembler",
+      "y": 270
+    }
+  }
+}

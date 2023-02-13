@@ -1,0 +1,13 @@
+{
+  "features": {
+    "enabled": [
+      "motobox:caravan"
+    ]
+  },
+  "pack": {
+    "description": {
+      "translate": "dataPack.motobox.caravan.description"
+    },
+    "pack_format": 10
+  }
+}

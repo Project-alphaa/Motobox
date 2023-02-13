@@ -1,0 +1,29 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:engines",
+  "sortnum": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:furnace"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "minecraft:comparator"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  ],
+  "result": {
+    "item": "motobox:vehicle_engine",
+    "component": "motobox:diesel_four_cylinder"
+  }
+}

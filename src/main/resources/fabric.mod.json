@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "motobox",
+  "version": "${version}",
+  "name": "Motobox",
+  "description": "Adds new realistic vehicles to the game",
+  "authors": [
+    "Qboi123",
+    "DrAlpha",
+    "FoundationGames",
+    "MincraftEinstein",
+    "C0D3 M4513R"
+  ],
+  "contact": {
+    "homepage": "https://ultreon.github.io/web/",
+    "sources": "https://github.com/Ultreon/motobox",
+    "issues": "https://github.com/Ultreon/motobox/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/motobox/icon.png",
+  "environment": "*",
+  "accessWidener": "motobox.accesswidener",
+  "entrypoints": {
+    "main": [
+      "motobox.Motobox"
+    ],
+    "client": [
+      "motobox.MotoboxClient"
+    ],
+    "motobox:feature_flags": [
+      "motobox.MotoboxFeatureFlagsRegister"
+    ]
+  },
+  "mixins": [
+    "motobox.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "lambdacontrols": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/dtdc46g6ry"
+      }
+    }
+  }
+}

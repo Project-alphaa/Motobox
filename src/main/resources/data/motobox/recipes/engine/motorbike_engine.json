@@ -1,0 +1,26 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:engines",
+  "sortnum": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:furnace"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "minecraft:redstone_torch"
+    }
+  ],
+  "result": {
+    "item": "motobox:vehicle_engine",
+    "component": "motobox:motorbike"
+  }
+}

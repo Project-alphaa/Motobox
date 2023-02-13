@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g ",
+    "ili"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "l": {
+      "item": "motobox:launch_gel"
+    }
+  },
+  "result": {
+    "item": "motobox:dash_panel",
+    "count": 2
+  }
+}

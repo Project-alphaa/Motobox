@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=0": {
+      "model": "motobox:block/roadblock"
+    },
+    "facing=1": {
+      "model": "motobox:block/roadblock_corner",
+      "y": 270
+    },
+    "facing=2": {
+      "model": "motobox:block/roadblock",
+      "y": 90
+    },
+    "facing=3": {
+      "model": "motobox:block/roadblock_corner",
+      "y": 0
+    },
+    "facing=4": {
+      "model": "motobox:block/roadblock",
+      "y": 180
+    },
+    "facing=5": {
+      "model": "motobox:block/roadblock_corner",
+      "y": 90
+    },
+    "facing=6": {
+      "model": "motobox:block/roadblock",
+      "y": 270
+    },
+    "facing=7": {
+      "model": "motobox:block/roadblock_corner",
+      "y": 180
+    }
+  }
+}

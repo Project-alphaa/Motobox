@@ -1,0 +1,20 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:wheels",
+  "sortnum": 2,
+  "ingredients": [
+    {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "result": {
+    "item": "motobox:vehicle_wheel",
+    "component": "motobox:motorbike"
+  }
+}

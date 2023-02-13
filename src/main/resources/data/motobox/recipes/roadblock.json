@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:gray_concrete"
+    }
+  },
+  "result": {
+    "item": "motobox:roadblock",
+    "count": 2
+  }
+}

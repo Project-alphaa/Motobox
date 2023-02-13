@@ -1,0 +1,24 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:wheels",
+  "sortnum": 102,
+  "ingredients": [
+    {
+      "item": "minecraft:black_wool"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:black_wool"
+    }
+  ],
+  "result": {
+    "item": "motobox:vehicle_wheel",
+    "count": 2,
+    "component": "motobox:sleek_red_offroad"
+  }
+}

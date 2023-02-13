@@ -1,0 +1,38 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:frames",
+  "sortnum": 100,
+  "ingredients": [
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_bars"
+    },
+    {
+      "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "minecraft:redstone_torch"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "tag": "minecraft:stone_crafting_materials"
+    },
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "result": {
+    "item": "motobox:vehicle_frame",
+    "component": "motobox:truck"
+  }
+}

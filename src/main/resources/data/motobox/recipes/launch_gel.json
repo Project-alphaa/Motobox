@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_block"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    }
+
+  ],
+  "result": {
+    "item": "motobox:launch_gel",
+    "count": 9
+  }
+}

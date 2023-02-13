@@ -1,0 +1,17 @@
+{
+  "type": "motobox:mechanic_table",
+  "category": "motobox:wheels",
+  "sortnum": 100,
+  "ingredients": [
+    {
+      "item": "minecraft:black_wool"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "result": {
+    "item": "motobox:vehicle_wheel",
+    "component": "motobox:rusty_steel"
+  }
+}
