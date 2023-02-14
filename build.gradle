@@ -33,6 +33,13 @@ repositories {
 	maven { url "https://api.modrinth.com/maven" }
 	maven { url "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" }
 
+	maven {
+		url "https://cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
+
 //	maven {
 //		name = "GitHubPackages"
 //		url = uri("https://maven.pkg.github.com/Ultreon/myron-updated")
@@ -69,8 +76,8 @@ dependencies {
 	}
 
 	// Json't
-	modImplementation "net.devtech:arrp:${project.arrp_version}"
-	include "net.devtech:arrp:${project.arrp_version}"
+	modImplementation("curse.maven:arrp-463113:${project.arrp_version}")
+	include("curse.mavan:arrp-463113:${project.arrp_version}")
 
 	// Json entity models
 //	modImplementation "maven.modrinth:jsonem:${project.jsonem_version}"
