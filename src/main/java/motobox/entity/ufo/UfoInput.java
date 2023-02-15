@@ -10,7 +10,7 @@ public class UfoInput {
     private static final String UFO_CATEGORY = "category.ufos.ufocontrols";
 
     private static KeyBinding upKey = new KeyBinding("ufo.key.up", GLFW.GLFW_KEY_SPACE, UFO_CATEGORY);
-    private static KeyBinding downKey = new KeyBinding("ufo.key.down", GLFW.GLFW_KEY_LEFT_CONTROL, UFO_CATEGORY);
+    private static KeyBinding downKey = new KeyBinding("ufo.key.down", GLFW.GLFW_KEY_C, UFO_CATEGORY);
 
     public static boolean pressingForward() {
         return MinecraftClient.getInstance().options.forwardKey.isPressed();
