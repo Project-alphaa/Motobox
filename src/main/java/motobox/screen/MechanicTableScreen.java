@@ -10,6 +10,7 @@ import net.minecraft.client.resource.language.I18n;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.OrderedText;
@@ -205,7 +206,10 @@ public class MechanicTableScreen extends HandledScreen<MechanicTableScreenHandle
         DrawableHelper.fill(matrices, x, y, x + 16, y + 16, 0x45FF0000);
 
         var stacks = ing.getMatchingStacks();
-        this.itemRenderer.renderInGui(stacks[MathHelper.floor((float)this.time / 30) % stacks.length], x, y);
+        ItemStack stack = stacks[MathHelper.floor((float)this.time / 30) % stacks.length];
+        stack.setCount(handler.missingIngredients.get(ing));
+        itemRenderer.renderInGuiWithOverrides(stack, x, y);
+        itemRenderer.renderGuiItemOverlay(client.textRenderer, stack, x, y);
 
         RenderSystem.depthFunc(516);
         DrawableHelper.fill(matrices, x, y, x + 16, y + 16, 0x30FFFFFF);
@@ -214,7 +218,7 @@ public class MechanicTableScreen extends HandledScreen<MechanicTableScreenHandle
 
     protected void drawMissingIngredients(MatrixStack matrices) {
         var inputInv = this.handler.inputInv;
-        var missingIngs = new ArrayDeque<>(this.handler.missingIngredients);
+        var missingIngs = new ArrayDeque<>(this.handler.missingIngredients.keySet());
 
         for (int i = 0; i < inputInv.size(); i++) if (missingIngs.size() > 0) {
             int x = this.x + 8 + (i * 18);

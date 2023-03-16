@@ -4,10 +4,16 @@
   "sortnum": 100,
   "ingredients": [
     {
-      "item": "minecraft:black_wool"
+      "items": {
+        "item": "minecraft:black_wool"
+      },
+      "count": 4
     },
     {
-      "item": "minecraft:iron_nugget"
+      "items": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 2
     }
   ],
   "result": {

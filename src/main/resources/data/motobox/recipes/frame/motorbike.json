@@ -4,25 +4,39 @@
   "sortnum": 100,
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot"
+      "items": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 24
     },
     {
-      "item": "minecraft:iron_ingot"
+      "items": {
+        "item": "minecraft:iron_nugget"
+      },
+      "count": 15
     },
     {
-      "item": "minecraft:iron_nugget"
+      "items": {
+        "item": "minecraft:stick"
+      }
     },
     {
-      "item": "minecraft:stick"
+      "items": {
+        "item": "minecraft:red_dye"
+      },
+      "count": 5
     },
     {
-      "item": "minecraft:red_dye"
+      "items": {
+        "tag": "minecraft:stone_crafting_materials"
+      },
+      "count": 3
     },
     {
-      "tag": "minecraft:stone_crafting_materials"
-    },
-    {
-      "tag": "minecraft:wool"
+      "items": {
+        "tag": "minecraft:wool"
+      },
+      "count": 5
     }
   ],
   "result": {

@@ -4,25 +4,40 @@
   "sortnum": 100,
   "ingredients": [
     {
-      "item": "minecraft:iron_block"
+      "items": {
+        "item": "minecraft:iron_block"
+      },
+      "count": 6
     },
     {
-      "item": "minecraft:iron_block"
+      "items": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 12
     },
     {
-      "item": "minecraft:iron_ingot"
+      "items": {
+        "item": "minecraft:iron_bars"
+      },
+      "count": 3
     },
     {
-      "item": "minecraft:iron_bars"
+      "items": {
+        "item": "minecraft:glass_pane"
+      },
+      "count": 8
     },
     {
-      "item": "minecraft:glass_pane"
+      "items": {
+        "item": "minecraft:white_dye"
+      },
+      "count": 15
     },
     {
-      "item": "minecraft:white_dye"
-    },
-    {
-      "tag": "minecraft:wool"
+      "items": {
+        "tag": "minecraft:wool"
+      },
+      "count": 10
     }
   ],
   "result": {

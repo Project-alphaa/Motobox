@@ -4,13 +4,15 @@
   "sortnum": 200,
   "ingredients": [
     {
-      "item": "minecraft:black_wool"
+      "items": {
+        "item": "minecraft:black_wool"
+      },
+      "count": 4
     },
     {
-      "item": "minecraft:iron_block"
-    },
-    {
-      "item": "minecraft:black_wool"
+      "items": {
+        "item": "minecraft:iron_block"
+      }
     }
   ],
   "result": {

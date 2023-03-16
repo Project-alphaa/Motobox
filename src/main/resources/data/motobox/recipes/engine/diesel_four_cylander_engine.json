@@ -4,22 +4,37 @@
   "sortnum": 2,
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot"
+      "items": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 8
     },
     {
-      "item": "minecraft:furnace"
+      "items": {
+        "item": "minecraft:furnace"
+      }
     },
     {
-      "item": "minecraft:redstone_block"
+      "items": {
+        "item": "minecraft:redstone_block"
+      },
+      "count": 2
     },
     {
-      "item": "minecraft:comparator"
+      "items": {
+        "item": "minecraft:comparator"
+      }
     },
     {
-      "item": "minecraft:iron_block"
+      "items": {
+        "item": "minecraft:iron_block"
+      }
     },
     {
-      "tag": "minecraft:stone_crafting_materials"
+      "items": {
+        "tag": "minecraft:stone_crafting_materials"
+      },
+      "count": 2
     }
   ],
   "result": {

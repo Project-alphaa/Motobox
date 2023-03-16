@@ -3,13 +3,32 @@
   "category": "motobox:attachments",
   "sortnum": 206,
   "ingredients": [
-    {"item": "minecraft:iron_block"},
-    {"item": "minecraft:iron_block"},
-    {"item": "minecraft:iron_block"},
-    {"item": "minecraft:furnace"},
-    {"item": "minecraft:chest"},
-    {"tag": "minecraft:beds"},
-    {"tag": "minecraft:doors"}
+    {
+      "items": {
+        "item": "minecraft:iron_block"
+      },
+      "count": 10
+    },
+    {
+      "items": {
+        "item": "minecraft:furnace"
+      }
+    },
+    {
+      "items": {
+        "item": "minecraft:chest"
+      }
+    },
+    {
+      "items": {
+        "tag": "minecraft:beds"
+      }
+    },
+    {
+      "items": {
+        "tag": "minecraft:doors"
+      }
+    }
   ],
   "result": {
     "item": "motobox:rear_attachment",

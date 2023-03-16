@@ -3,11 +3,41 @@
   "category": "motobox:attachments",
   "sortnum": 206,
   "ingredients": [
-    {"item": "minecraft:iron_block"},
-    {"item": "minecraft:iron_bars"},
-    {"item": "minecraft:iron_bars"},
-    {"item": "minecraft:chest"},
-    {"tag": "minecraft:logs"}
+    {
+      "items": {
+        "item": "minecraft:iron_block"
+      },
+      "count": 3
+    },
+    {
+      "items": {
+        "tag": "minecraft:fences"
+      },
+      "count": 5
+    },
+    {
+      "items": {
+        "item": "minecraft:chest"
+      }
+    },
+    {
+      "items": {
+        "tag": "minecraft:logs"
+      },
+      "count": 10
+    },
+    {
+      "items": {
+        "item": "minecraft:chain"
+      }
+    },
+    {
+      "items": {
+        "item": "motobox:wheel",
+        "component": "motobox:steel_rim"
+      },
+      "count": 2
+    }
   ],
   "result": {
     "item": "motobox:rear_attachment",

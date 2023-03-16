@@ -4,19 +4,33 @@
   "sortnum": 1,
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot"
+      "items": {
+        "item": "minecraft:iron_ingot"
+      },
+      "count": 4
     },
     {
-      "item": "minecraft:furnace"
+      "items": {
+        "item": "minecraft:furnace"
+      }
     },
     {
-      "item": "minecraft:coal"
+      "items": {
+        "item": "minecraft:coal"
+      },
+      "count": 5
     },
     {
-      "item": "minecraft:iron_nugget"
+      "items": {
+        "item": "minecraft:iron_nugget"
+      },
+      "count": 12
     },
     {
-      "item": "minecraft:redstone_torch"
+      "items": {
+        "item": "minecraft:redstone_torch"
+      },
+      "count": 2
     }
   ],
   "result": {

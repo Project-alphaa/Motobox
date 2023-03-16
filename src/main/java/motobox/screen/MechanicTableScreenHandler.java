@@ -15,10 +15,7 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class MechanicTableScreenHandler extends ScreenHandler {
     private final World world;
@@ -27,7 +24,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
 
     public List<MechanicTableRecipe> recipes;
 
-    public final List<Ingredient> missingIngredients = new ArrayList<>();
+    public final Map<Ingredient, Integer> missingIngredients = new HashMap<>();
     public final SimpleInventory inputInv;
     public final Slot outputSlot;
 
@@ -80,7 +77,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
     private void updateMissingIngredients() {
         this.missingIngredients.clear();
 
-        this.getSelectedRecipe().ifPresent(recipe -> recipe.forMissingIngredients(this.inputInv, this.missingIngredients::add));
+        this.getSelectedRecipe().ifPresent(recipe -> recipe.forMissingIngredients(this.inputInv, true, this.missingIngredients::put));
     }
 
     private void updateRecipeState() {
@@ -156,7 +153,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
                     return ItemStack.EMPTY;
                 }
             // Items being transferred into the input row, which match the missing ingredients
-            } else if (this.missingIngredients.stream().anyMatch(ing -> ing.test(fromStack))) {
+            } else if (this.missingIngredients.keySet().stream().anyMatch(ing -> ing.test(fromStack))) {
                 if (!this.insertItem(fromStack, 0, 8, false)) {
                     return ItemStack.EMPTY;
                 }

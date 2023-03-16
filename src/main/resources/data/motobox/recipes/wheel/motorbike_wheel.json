@@ -4,13 +4,15 @@
   "sortnum": 2,
   "ingredients": [
     {
-      "item": "minecraft:cobbled_deepslate"
+      "items": {
+        "item": "minecraft:cobbled_deepslate"
+      },
+      "count": 2
     },
     {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:cobbled_deepslate"
+      "items": {
+        "item": "minecraft:iron_ingot"
+      }
     }
   ],
   "result": {
