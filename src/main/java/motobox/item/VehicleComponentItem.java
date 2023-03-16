@@ -3,6 +3,8 @@ package motobox.item;
 import motobox.util.SimpleMapContentRegistry;
 import motobox.vehicle.VehicleComponent;
 import motobox.vehicle.VehicleWheel;
+import motobox.vehicle.attachment.RearAttachmentType;
+import motobox.vehicle.attachment.rear.TrailerRearAttachment;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
@@ -93,10 +95,16 @@ public class VehicleComponentItem<T extends VehicleComponent<T>> extends Item {
                 matrices.push();
                 matrices.translate(0.5, 0, 0.5);
                 matrices.scale(scale, -scale, -scale);
+
                 if (component instanceof VehicleWheel wheel && wheel == VehicleWheel.STEEL_RIM) {
                     matrices.translate(0.01f, -0.32f, 0);
                     matrices.scale(0.2f, 0.2f, 0.2f);
                 }
+
+                if (component instanceof RearAttachmentType<?> attachment && attachment == RearAttachmentType.TRAILER) {
+                    matrices.translate(0, -0.5F, -2);
+                }
+
                 model.render(matrices, vertexConsumers.getBuffer(model.getLayer(textureProvider.apply(component))), light, overlay, 1, 1, 1, 1);
                 matrices.pop();
             }
