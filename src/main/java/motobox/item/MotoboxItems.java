@@ -27,7 +27,7 @@ import java.util.function.Function;
 
 public enum MotoboxItems {
     ;
-    public static final Item HAMMER = register("hammer", new TooltipItem(Text.translatable("tooltip.item.motobox.hammer").formatted(Formatting.BLUE), new Item.Settings().maxCount(1)));
+    public static final Item HAMMER = register("hammer", new HammerItem(new Item.Settings()));
     public static final Item VEHICLE = register("vehicle", new VehicleItem(new Item.Settings().maxCount(1)));
     public static final VehicleFrameItem VEHICLE_FRAME = register("vehicle_frame", new VehicleFrameItem(new Item.Settings().maxCount(16)));
     public static final VehicleWheelItem VEHICLE_WHEEL = register("vehicle_wheel", new VehicleWheelItem(new Item.Settings()));
