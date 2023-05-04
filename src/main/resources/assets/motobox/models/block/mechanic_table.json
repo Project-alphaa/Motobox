@@ -4,7 +4,7 @@
 	"textures": {
 		"2": "motobox:block/mechanic_table_blueprints",
 		"5": "motobox:block/mechanic_table",
-		"particle": "#5"
+		"particle": "minecraft:block/red_concrete"
 	},
 	"elements": [
 		{

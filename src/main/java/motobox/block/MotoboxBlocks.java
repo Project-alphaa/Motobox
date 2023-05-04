@@ -73,6 +73,7 @@ public enum MotoboxBlocks {
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D), GRASS_OFF_ROAD.asItem());
 
         BlockRenderLayerMap.INSTANCE.putBlock(LAUNCH_GEL, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(MECHANIC_TABLE, RenderLayer.getCutout());
     }
 
     public static Block register(String name, Block block) {

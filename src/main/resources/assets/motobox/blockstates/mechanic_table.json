@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "motobox:block/mechanic_table"
+    },
+    "facing=north": {
+      "model": "motobox:block/mechanic_table",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "motobox:block/mechanic_table",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "motobox:block/mechanic_table",
+      "y": 90
     }
   }
 }
