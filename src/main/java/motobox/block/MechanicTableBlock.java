@@ -31,22 +31,25 @@ import java.util.stream.Stream;
 public class MechanicTableBlock extends HorizontalFacingBlock implements GenericMotoboxItem {
 
     private static final VoxelShape SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(0, 11, 0, 16, 13, 16),
-            Block.createCuboidShape(0, 13, 0, 16, 14, 2),
-            Block.createCuboidShape(13.5, 10, 2.5, 15.5, 11, 13.5),
-            Block.createCuboidShape(2.5, 10, 13.5, 13.5, 11, 15.5),
+            Block.createCuboidShape(0, 14, 0, 16, 16, 16),
+            Block.createCuboidShape(0, 16, 0, 16, 17, 2),
+            Block.createCuboidShape(13.5, 13, 2.5, 15.5, 14, 13.5),
+            Block.createCuboidShape(2.5, 13, 13.5, 13.5, 14, 15.5),
             Block.createCuboidShape(0.5, 2, 0.5, 2.5, 11, 2.5),
-            Block.createCuboidShape(1, 3, 1, 15, 4, 15),
+            Block.createCuboidShape(1, 6, 1, 15, 7, 15),
             Block.createCuboidShape(13.5, 2, 0.5, 15.5, 11, 2.5),
             Block.createCuboidShape(0.5, 2, 13.5, 2.5, 11, 15.5),
             Block.createCuboidShape(13.5, 2, 13.5, 15.5, 11, 15.5),
+            Block.createCuboidShape(13.5, 11, 13.5, 15.5, 14, 15.5),
+            Block.createCuboidShape(13.5, 11, 0.5, 15.5, 14, 2.5),
+            Block.createCuboidShape(0.5, 11, 13.5, 2.5, 14, 15.5),
+            Block.createCuboidShape(0.5, 11, 0.5, 2.5, 14, 2.5),
             Block.createCuboidShape(13.5, 0, 1, 15.5, 2, 2),
             Block.createCuboidShape(0.5, 0, 1, 2.5, 2, 2),
             Block.createCuboidShape(0.5, 0, 14, 2.5, 2, 15),
             Block.createCuboidShape(13.5, 0, 14, 15.5, 2, 15),
-            Block.createCuboidShape(0.5, 10, 2.5, 2.5, 11, 13.5),
-            Block.createCuboidShape(2.5, 10, 0.5, 13.5, 11, 2.5),
-            Block.createCuboidShape(9, 13.001, 10, 16, 13.001, 15)
+            Block.createCuboidShape(0.5, 13, 2.5, 2.5, 14, 13.5),
+            Block.createCuboidShape(2.5, 13, 0.5, 13.5, 14, 2.5)
     );
     public static final Text UI_TITLE = Text.translatable("container.motobox.mechanic_table");
 
