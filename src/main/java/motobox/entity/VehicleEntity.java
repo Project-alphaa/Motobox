@@ -622,16 +622,16 @@ public class VehicleEntity extends BoatEntity implements RenderableVehicle, Enti
                 syncData();
                 dirty = false;
             }
-            if (this.hasSpaceForPassengers() && !decorative) {
-                var touchingEntities = this.world.getOtherEntities(this, this.getBoundingBox().expand(0.2, 0, 0.2), EntityPredicates.canBePushedBy(this));
-                for (Entity entity : touchingEntities) {
-                    if (!entity.hasPassenger(this)) {
-                        if (!entity.hasVehicle() && entity.getWidth() <= this.getWidth() && entity instanceof MobEntity && !(entity instanceof WaterCreatureEntity)) {
-                            entity.startRiding(this);
-                        }
-                    }
-                }
-            }
+//            if (this.hasSpaceForPassengers() && !decorative) {
+//                var touchingEntities = this.world.getOtherEntities(this, this.getBoundingBox().expand(0.2, 0, 0.2), EntityPredicates.canBePushedBy(this));
+//                for (Entity entity : touchingEntities) {
+//                    if (!entity.hasPassenger(this)) {
+//                        if (!entity.hasVehicle() && entity.getWidth() <= this.getWidth() && entity instanceof MobEntity && !(entity instanceof WaterCreatureEntity)) {
+//                            entity.startRiding(this);
+//                        }
+//                    }
+//                }
+//            }
             if (this.hasPassengers()) {
                 if (Objects.requireNonNull(this.getFrontAttachment()).canDrive(this.getFirstPassenger()) && this.getFirstPassenger() instanceof MobEntity mob) {
                     provideMobDriverInputs(mob);
