@@ -17,3 +17,5 @@ Features:
 
 
 Contributors
+Foundation games former author
+Qboi Author
