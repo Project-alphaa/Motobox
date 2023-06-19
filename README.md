@@ -16,4 +16,4 @@ Features:
 
 
 
-contributers
+Contributors
