@@ -17,5 +17,5 @@ Features:
 
 
 Contributors
-Foundation games former author
-Qboi Author
+- Foundation games (former author)
+- Qboi (Author)
