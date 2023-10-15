@@ -1,19 +1,7 @@
 # Motobox
 
 ## Overview
-Motobox Vehicle Mod offers a variety of customizable vehicles for enjoyable and practical purposes. Discover vehicles for exploration, farming, transportation, racing, and even flying. Modify each vehicle with unique engines and wheels to alter speed and adaptability to different terrains.
-
-
-
-Features:
-
-
-- Adds over 3 vehicles (including powered vehicles and useful trailers)
-
-- Customize vehicles with different colours, wheels and engines
-
-- Controller support for [MidnightControls](https://www.curseforge.com/minecraft/mc-mods/midnightcontrols) (allows you to drive vehicles using a controller)
-
+With Motobox Vehicle Mod, you can customize your vehicles with a variety of colors, wheels, and engines. The mod adds more than three vehicles, including powered vehicles and useful trailers, for both practical and enjoyable activities. You can explore, farm, transport, race, and even fly with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. The mod also supports controllers with MidnightControls, which allows you to drive the vehicles using a controller.
 
 
 Contributors:
