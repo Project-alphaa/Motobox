@@ -16,6 +16,7 @@ With Motobox Vehicle Mod, you can customize your vehicles with a variety of colo
 - MincraftEinstein (Contributor)
 - Jab125 (Contributor)
 - Chumasay (Artist)
+- Sky (Contributor)
 
 ---
 ### **📚 FAQ**
