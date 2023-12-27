@@ -3,18 +3,18 @@
   "id": "motobox",
   "version": "${version}",
   "name": "Motobox",
-  "description": "Adds new realistic vehicles to the game",
+  "description": "Minecraft Vehicle Mod",
   "authors": [
-    "Qboi123",
-    "DrAlpha",
     "FoundationGames",
+    "Qboi123",
     "MincraftEinstein",
+    "adamdawoud",
     "C0D3 M4513R"
   ],
   "contact": {
-    "homepage": "https://ultreon.github.io/web/",
-    "sources": "https://github.com/Ultreon/motobox",
-    "issues": "https://github.com/Ultreon/motobox/issues"
+    "homepage": "https://legacy.curseforge.com/minecraft/mc-mods/motobox",
+    "sources": "https://github.com/Project-Alphaa/Motobox",
+    "issues": "https://github.com/Project-Alphaa/Motobox/issues"
   },
   "license": "MIT",
   "icon": "assets/motobox/icon.png",
@@ -46,7 +46,7 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.discord": "https://discord.gg/dtdc46g6ry"
+        "modmenu.discord": "https://discord.gg/the-alpha-server-852655613669277777"
       }
     }
   }
