@@ -43,7 +43,7 @@
     "geckolib": ">=4.0.3"
   },
   "suggests": {
-    "lambdacontrols": "*"
+    "midnightcontrols": "*"
   },
   "custom": {
     "modmenu": {
