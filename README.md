@@ -33,4 +33,4 @@ With Motobox Vehicle Mod, you can customize your vehicles with a variety of colo
 <br><br>
 **Q:** I would like to contribute to or maintain the mod. Would I be able to do so?
 <br>
-**A:** Of course, you can do both or help add a feature. Just make sure to let me know by contacting my Discord "adamdawoud".
+**A:** Of course, you can do both or help add a feature. Just make sure to contact me through my Discord server..
