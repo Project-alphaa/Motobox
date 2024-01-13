@@ -1,27 +1,17 @@
-# Motobox
+![Motobox banner](https://media.discordapp.net/attachments/1064938573436047482/1195475757561024713/FinalTruck.png?ex=65b4208f&is=65a1ab8f&hm=64d78240d711eb0c956b8398775074e2ea73419c684af771b7baca1827f6fb83&=&format=webp&quality=lossless&width=1125&height=375)
 
-![Motobox banner](https://github.com/Project-Alphaa/Motobox/assets/115327854/a0256632-e318-4434-8188-93aad60bc853)
-
-![](https://img.shields.io/badge/Mod_Loader-Fabric-green?style=for-the-badge)
-[![Discord](https://img.shields.io/badge/Discord-Invite-blue?style=for-the-badge&logo=discord)](https://discord.gg/the-alpha-server-852655613669277777)
+![](https://img.shields.io/badge/Mod_Loader-Fabric-6a6a6a?style=for-the-badge&labelColor=272727)
+[![](https://img.shields.io/badge/-Github-6a6a6a?style=for-the-badge&labelColor=272727&logo=github)](https://github.com/Project-Alphaa/Motobox)
+[![](https://img.shields.io/badge/-Curseforge-6a6a6a?style=for-the-badge&labelColor=272727&logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/motobox)
+[![](https://img.shields.io/badge/Discord-6a6a6a?style=for-the-badge&labelColor=272727&logo=discord)](https://discord.gg/the-alpha-server-852655613669277777)
 
 ### **📘 Description**
-With Motobox Vehicle Mod, you can customize your vehicles with a variety of colors, wheels, and engines. The mod adds more than three vehicles, including powered vehicles and useful trailers, for practical and enjoyable activities. You can explore, farm, transport, race, and even fly with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. The mod also supports controllers with MidnightControls, which allows you to drive the vehicles using a controller.
+With Motobox Vehicle Mod, you can customize your vehicles with a variety of wheels, and engines. The mod adds more than three vehicles, including powered vehicles and a useful trailer, for practical use. You can explore, transport, and race with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. The mod also supports controllers with MidnightControls, which allows you to drive the vehicles using a controller.
 
----
+**Note:** This is a fork of [Automobility](https://modrinth.com/mod/automobility) with our own spin on things, we had permission to do it.
 
-### **🙎‍♂️ Contributors**
-- Foundation games (Former Author)
-- Qboi (Author)
-- MincraftEinstein (Contributor)
-- Jab125 (Contributor)
-- Chumasay (Artist)
-- Skylandia (Contributor)
-- SJKZ1-2565 (Contributor)
-- C0D3_M4513R (Contributor)
+![](https://i.imgur.com/j8YAnhl.png)
 
-
----
 ### **📚 FAQ**
 **Q:** Can I use this mod in my modpack?
 <br>
@@ -30,7 +20,20 @@ With Motobox Vehicle Mod, you can customize your vehicles with a variety of colo
 **Q:** What are the different game versions that this mod will support?
 <br>
 **A:** Currently only version 1.19.3. If there is a high demand we will provide a 1.20 version.
-<br><br>
-**Q:** I would like to contribute to or maintain the mod. Would I be able to do so?
-<br>
-**A:** Of course, you can do both or help add a feature. Just make sure to contact me through my Discord server.
+
+![](https://i.imgur.com/j8YAnhl.png)
+
+🛠 Contributing
+If anyone would like to add the remaining features to the game, feel free to check out the Trello board: [Mod Trello Board](https://trello.com/b/BmcUb06n/project-slenderman-main). Just make sure to contact me through my discord server for any help.
+
+![](https://i.imgur.com/j8YAnhl.png)
+
+### **🙎‍♂️ Additional Credits**
+- Foundation games (Former Author)
+- Qboi (Author)
+- MincraftEinstein (Contributor)
+- Jab125 (Contributor)
+- Chumasay (Artist)
+- Skylandia (Contributor)
+- SJKZ1-2565 (Contributor)
+- C0D3_M4513R (Contributor)
