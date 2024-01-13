@@ -3,6 +3,7 @@
 ![](https://img.shields.io/badge/Mod_Loader-Fabric-6a6a6a?style=for-the-badge&labelColor=272727)
 [![](https://img.shields.io/badge/-Github-6a6a6a?style=for-the-badge&labelColor=272727&logo=github)](https://github.com/Project-Alphaa/Motobox)
 [![](https://img.shields.io/badge/-Curseforge-6a6a6a?style=for-the-badge&labelColor=272727&logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/motobox)
+[![](https://img.shields.io/badge/-Modrinth-6a6a6a?style=for-the-badge&labelColor=272727&logo=modrinth)](https://modrinth.com/mod/motobox)
 [![](https://img.shields.io/badge/Discord-6a6a6a?style=for-the-badge&labelColor=272727&logo=discord)](https://discord.gg/the-alpha-server-852655613669277777)
 
 ### **📘 Description**
