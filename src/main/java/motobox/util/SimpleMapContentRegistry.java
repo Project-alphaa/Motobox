@@ -42,7 +42,7 @@ public class SimpleMapContentRegistry<V extends SimpleMapContentRegistry.Identif
     }
 
     public V getOrDefault(Identifier name) {
-        if (orderedKeys.size() == 0) throw new IllegalStateException("Tried to get from empty registry!");
+        if (orderedKeys.isEmpty()) throw new IllegalStateException("Tried to get from empty registry!");
         return entries.getOrDefault(name, entries.get(orderedKeys.get(0)));
     }
 

@@ -41,7 +41,7 @@ public class SteepSlopeBlock extends HorizontalFacingBlock implements Waterlogga
                         .with(WATERLOGGED, ctx.getWorld().getBlockState(ctx.getBlockPos()).isOf(Blocks.WATER))
                 :
                 super.getPlacementState(ctx)
-                        .with(FACING, ctx.getPlayerFacing().getOpposite())
+                        .with(FACING, ctx.getPlayerLookDirection().getOpposite())
                         .with(WATERLOGGED, ctx.getWorld().getBlockState(ctx.getBlockPos()).isOf(Blocks.WATER));
     }
 

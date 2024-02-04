@@ -24,8 +24,12 @@ import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.TagKey;
 
 public enum MotoboxEntities {
@@ -46,9 +50,10 @@ public enum MotoboxEntities {
 
     public static final TagKey<EntityType<?>> DASH_PANEL_BOOSTABLES = TagKey.of(Registries.ENTITY_TYPE.getKey(), Motobox.id("dash_panel_boostables"));
 
-    public static final DamageSource VEHICLE_DAMAGE_SOURCE = new VehicleDamageSource("vehicle");
+    public static final RegistryKey<DamageType> VEHICLE_DAMAGE_TYPE = RegistryKey.of(RegistryKeys.DAMAGE_TYPE, Motobox.id("vehicle"));
 
     public static void init() {
+
     }
 
     @Environment(EnvType.CLIENT)

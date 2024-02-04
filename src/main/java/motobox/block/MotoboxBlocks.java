@@ -48,7 +48,7 @@ public enum MotoboxBlocks {
     public static final Block SAND_OFF_ROAD = register("sand_off_road", new OffRoadBlock(FabricBlockSettings.copyOf(Blocks.SAND).noCollision(), new Color(0xC2B185)), MotoboxBlocks::simpleItem);
     public static final Block SNOW_OFF_ROAD = register("snow_off_road", new OffRoadBlock(FabricBlockSettings.copyOf(Blocks.SNOW_BLOCK).noCollision(), new Color(0xD0E7ED)), MotoboxBlocks::simpleItem);
 
-    public static final Block ASPHALT = register("asphalt", new AsphaltBlock(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).requiresTool().strength(1.5f, 6.0f)), MotoboxBlocks::simpleItem);
+    public static final Block ASPHALT = register("asphalt", new AsphaltBlock(FabricBlockSettings.create().mapColor(MapColor.BLACK).requiresTool().strength(1.5f, 6.0f)), MotoboxBlocks::simpleItem);
     public static final Block TRAFFIC_CONE = register("traffic_cone", new TrafficConeBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(0.5f, 2.0f)), MotoboxBlocks::simpleItem);
     public static final Block ROADBLOCK = register("roadblock", new RoadblockBlock(FabricBlockSettings.copyOf(Blocks.GRAY_CONCRETE).requiresTool().strength(2.0f, 6.0f)), MotoboxBlocks::simpleItem);
 

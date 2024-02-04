@@ -1,7 +1,7 @@
 //file:noinspection GroovyAssignabilityCheck
 plugins {
-	id 'fabric-loom' version '1.0-SNAPSHOT'
-	id 'org.jetbrains.kotlin.jvm' version "1.7.10"
+	id 'fabric-loom' version '1.5-SNAPSHOT'
+	id 'org.jetbrains.kotlin.jvm' version "1.9.22"
 	id 'maven-publish'
 }
 
@@ -29,8 +29,8 @@ repositories {
 	maven { url terraformersUrl() }
 	maven { url "https://aperlambda.github.io/maven" }
 	maven { url "https://hephaestus.dev/release" }
-	maven { url "https://storage.googleapis.com/devan-maven/" }
 	maven { url "https://api.modrinth.com/maven" }
+	maven { url "https://storage.googleapis.com/devan-maven/" }
 	maven { url "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" }
 
 	maven {
@@ -39,15 +39,6 @@ repositories {
 			includeGroup "curse.maven"
 		}
 	}
-
-//	maven {
-//		name = "GitHubPackages"
-//		url = uri("https://maven.pkg.github.com/Ultreon/myron-updated")
-//		credentials {
-//			username = rootProject.hasProperty("gpr.user") ? rootProject.property("gpr.user") : System.getenv("GITHUB_ACTOR")
-//			password = rootProject.hasProperty("gpr.key") ? rootProject.property("gpr.key") : System.getenv("GITHUB_TOKEN")
-//		}
-//	}
 
 	flatDir {
 		dir "$projectDir/libs"
@@ -64,7 +55,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Geckolib
-	modImplementation "software.bernie.geckolib:geckolib-fabric-1.19.3:4.0.3"
+	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20.1:4.4.2"
 
 	// Controller Support
 	include modImplementation("dev.lambdaurora:spruceui:${project.spruceui_version}")
@@ -82,9 +73,9 @@ dependencies {
 //	modImplementation "maven.modrinth:jsonem:${project.jsonem_version}"
 //	include "maven.modrinth:jsonem:${project.jsonem_version}"
 
-	modImplementation("net.fabricmc:fabric-language-kotlin:1.8.6+kotlin.1.7.21")
+	modImplementation("net.fabricmc:fabric-language-kotlin:1.10.17+kotlin.1.9.22")
 
-	modImplementation "com.terraformersmc:modmenu:5.0.2", {
+	modImplementation "com.terraformersmc:modmenu:7.2.2", {
 		exclude module: "fabric-api"
 	}
 
@@ -107,8 +98,8 @@ tasks.withType(JavaCompile).configureEach {
 	// If Javadoc is generated, this must be specified in that task too.
 	it.options.encoding = "UTF-8"
 
-	// Minecraft 1.17 (21w19a) upwards uses Java 16.
-	it.options.release = 16
+	// Minecraft 1.18 upwards uses Java 17.
+	it.options.release = 17
 }
 
 java {

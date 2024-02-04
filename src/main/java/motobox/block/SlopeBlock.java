@@ -49,7 +49,7 @@ public class SlopeBlock extends HorizontalFacingBlock implements Waterloggable, 
                         .with(HALF, slopeCtx.getSlopeHalf())
                 :
                 super.getPlacementState(ctx)
-                        .with(FACING, ctx.getPlayerFacing().getOpposite())
+                        .with(FACING, ctx.getPlayerLookDirection().getOpposite())
                         .with(WATERLOGGED, ctx.getWorld().getBlockState(ctx.getBlockPos()).isOf(Blocks.WATER))
                         .with(HALF, ctx.getHitPos().y - ctx.getBlockPos().getY() > 0.5 ? BlockHalf.TOP : BlockHalf.BOTTOM);
     }
