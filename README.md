@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/-Github-6a6a6a?style=for-the-badge&labelColor=272727&logo=github)](https://github.com/Project-Alphaa/Motobox)
 [![](https://img.shields.io/badge/-Curseforge-6a6a6a?style=for-the-badge&labelColor=272727&logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/motobox)
 [![](https://img.shields.io/badge/-Modrinth-6a6a6a?style=for-the-badge&labelColor=272727&logo=modrinth)](https://modrinth.com/mod/motobox)
-[![](https://img.shields.io/badge/Discord-6a6a6a?style=for-the-badge&labelColor=272727&logo=discord)](https://discord.gg/the-alpha-server-852655613669277777)
+[![](https://img.shields.io/badge/Discord-6a6a6a?style=for-the-badge&labelColor=272727&logo=discord)](https://discord.gg/rtEGCzbZym)
 
 ### **📘 Description**
 With Motobox Vehicle Mod, you can customize your vehicles with a variety of wheels, and engines. The mod adds more than three vehicles, including powered vehicles and a useful trailer, for practical use. You can explore, transport, and race with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. The mod also supports controllers with MidnightControls, which allows you to drive the vehicles using a controller.
