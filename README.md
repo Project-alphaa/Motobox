@@ -31,7 +31,7 @@ If anyone would like to add the remaining features to the game, feel free to che
 
 ### **🙎‍♂️ Additional Credits**
 - Foundation games (Former Author)
-- Qboi (Author)
+- ~~Qboi~~ XyperCode (Author)
 - MincraftEinstein (Contributor)
 - Jab125 (Contributor)
 - Chumasay (Artist)

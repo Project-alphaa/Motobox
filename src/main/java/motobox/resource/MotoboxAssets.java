@@ -102,7 +102,7 @@ public enum MotoboxAssets {
         }
     }
 
-    // Yes I didn't want to do actual smart datagen so behold
+    // Yes, I didn't want to do actual smart datagen so behold
     // I will more than likely replace this in the future
     public static void addMinecraftSlope(String name, String base) {
         base = switch (base) {

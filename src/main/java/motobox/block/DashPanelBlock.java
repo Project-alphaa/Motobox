@@ -44,7 +44,7 @@ public class DashPanelBlock extends HorizontalFacingBlock implements Waterloggab
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return super.getPlacementState(ctx).with(FACING, ctx.getPlayerFacing()).with(WATERLOGGED, ctx.getWorld().getBlockState(ctx.getBlockPos()).isOf(Blocks.WATER));
+        return super.getPlacementState(ctx).with(FACING, ctx.getPlayerLookDirection()).with(WATERLOGGED, ctx.getWorld().getBlockState(ctx.getBlockPos()).isOf(Blocks.WATER));
     }
 
     @Override

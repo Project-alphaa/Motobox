@@ -84,7 +84,7 @@ public enum PayloadPackets {;
             boolean space = buf.readBoolean();
             int entityId = buf.readInt();
             server.execute(() -> {
-                if (player.world.getEntityById(entityId) instanceof VehicleEntity vehicle) {
+                if (player.getWorld().getEntityById(entityId) instanceof VehicleEntity vehicle) {
                     vehicle.setInputs(fwd, back, left, right, space);
                     vehicle.markDirty();
                 }
@@ -93,7 +93,7 @@ public enum PayloadPackets {;
         ServerPlayNetworking.registerGlobalReceiver(Motobox.id("request_sync_vehicle_components"), (server, player, handler, buf, responseSender) -> {
             int entityId = buf.readInt();
             server.execute(() -> {
-                if (player.world.getEntityById(entityId) instanceof VehicleEntity vehicle) {
+                if (player.getWorld().getEntityById(entityId) instanceof VehicleEntity vehicle) {
                     sendSyncVehicleComponentsPacket(vehicle, player);
                     sendSyncVehicleAttachmentsPacket(vehicle, player);
 
@@ -113,7 +113,7 @@ public enum PayloadPackets {;
             PacketByteBuf dup = PacketByteBufs.copy(buf);
             int entityId = dup.readInt();
             client.execute(() -> {
-                if (client.player.world.getEntityById(entityId) instanceof VehicleEntity vehicle) {
+                if (client.player.getWorld().getEntityById(entityId) instanceof VehicleEntity vehicle) {
                     vehicle.readSyncToClientData(dup);
                 }
             });
@@ -124,7 +124,7 @@ public enum PayloadPackets {;
             var wheel = VehicleWheel.REGISTRY.getOrDefault(Identifier.tryParse(buf.readString()));
             var engine = VehicleEngine.REGISTRY.getOrDefault(Identifier.tryParse(buf.readString()));
             client.execute(() -> {
-                if (client.player.world.getEntityById(entityId) instanceof VehicleEntity vehicle) {
+                if (client.player.getWorld().getEntityById(entityId) instanceof VehicleEntity vehicle) {
                     vehicle.setComponents(frame, wheel, engine);
                 }
             });
@@ -134,7 +134,7 @@ public enum PayloadPackets {;
             var rearAtt = RearAttachmentType.REGISTRY.getOrDefault(Identifier.tryParse(buf.readString()));
             var frontAtt = FrontAttachmentType.REGISTRY.getOrDefault(Identifier.tryParse(buf.readString()));
             client.execute(() -> {
-                if (client.player.world.getEntityById(entityId) instanceof VehicleEntity vehicle) {
+                if (client.player.getWorld().getEntityById(entityId) instanceof VehicleEntity vehicle) {
                     vehicle.setRearAttachment(rearAtt);
                     vehicle.setFrontAttachment(frontAtt);
                 }
@@ -144,7 +144,7 @@ public enum PayloadPackets {;
             int entityId = buf.readInt();
             var banner = buf.readNbt();
             client.execute(() -> {
-                if (client.player.world.getEntityById(entityId) instanceof VehicleEntity vehicle &&
+                if (client.player.getWorld().getEntityById(entityId) instanceof VehicleEntity vehicle &&
                         vehicle.getRearAttachment() instanceof BannerPostRearAttachment bannerPost) {
                     bannerPost.setFromNbt(banner);
                 }

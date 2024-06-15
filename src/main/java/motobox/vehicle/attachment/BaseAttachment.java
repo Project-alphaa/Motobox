@@ -25,7 +25,7 @@ public abstract class BaseAttachment<T extends VehicleComponent<T>> {
     }
 
     protected final World world() {
-        return this.vehicle.world;
+        return this.vehicle.getWorld();
     }
 
     public abstract Vec3d pos();

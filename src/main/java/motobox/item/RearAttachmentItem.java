@@ -15,7 +15,7 @@ public class RearAttachmentItem extends VehicleComponentItem<RearAttachmentType<
     @Override
     public ActionResult interactVehicle(ItemStack stack, PlayerEntity player, Hand hand, VehicleEntity vehicle) {
         if (vehicle.getRearAttachment().type.isEmpty()) {
-            if (player.world.isClient()) {
+            if (player.getWorld().isClient()) {
                 return ActionResult.SUCCESS;
             }
 

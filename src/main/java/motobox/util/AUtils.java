@@ -169,7 +169,7 @@ public enum AUtils {;
     }
 
     public static boolean canMerge(ItemStack a, ItemStack b) {
-        return (a.isItemEqual(b)) && (a.getCount() + b.getCount() <= a.getMaxCount());
+        return (ItemStack.canCombine(a, b)) && (a.getCount() + b.getCount() <= a.getMaxCount());
     }
 
     /**

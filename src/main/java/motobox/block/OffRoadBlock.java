@@ -28,7 +28,7 @@ public class OffRoadBlock extends Block implements CourseElementItem {
     public final Color color;
 
     public OffRoadBlock(Settings settings, Color color) {
-        super(settings);
+        super(settings.pistonBehavior(PistonBehavior.DESTROY));
         setDefaultState(getDefaultState().with(LAYERS, 1));
         this.color = color;
     }
@@ -54,11 +54,6 @@ public class OffRoadBlock extends Block implements CourseElementItem {
         if (!canPlaceAt(state, world, pos)) {
             world.breakBlock(pos, true);
         }
-    }
-
-    @Override
-    public PistonBehavior getPistonBehavior(BlockState state) {
-        return PistonBehavior.DESTROY;
     }
 
     @Override
