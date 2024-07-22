@@ -7,7 +7,7 @@
 [![](https://img.shields.io/badge/Discord-6a6a6a?style=for-the-badge&labelColor=272727&logo=discord)](https://discord.gg/rtEGCzbZym)
 
 ### **📘 Description**
-With Motobox Vehicle Mod, you can customize your vehicles with a variety of wheels, and engines. The mod adds more than three vehicles, including powered vehicles and a useful trailer, for practical use. You can explore, transport, and race with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. The mod also supports controllers with MidnightControls, which allows you to drive the vehicles using a controller.
+A driving simulator where you can customize your vehicles with a variety of wheels and engines. The mod adds more than three vehicles, including powered vehicles and a useful trailer for practical use. You can explore, transport, and race with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. This mod also supports controllers with MidnightControls, allowing you to drive the vehicles using a controller.
 
 **Note:** This is a fork of [Automobility](https://modrinth.com/mod/automobility) with our own spin on things, we had permission to do it.
 
@@ -18,9 +18,9 @@ With Motobox Vehicle Mod, you can customize your vehicles with a variety of whee
 <br>
 **A:** Yes, feel free to use this mod in your modpack.
 <br><br>
-**Q:** What are the different game versions that this mod will support?
+**Q:** I have an inquiry about something. Can you help?
 <br>
-**A:** Currently only version 1.19.3. If there is a high demand we will provide a 1.20 version.
+**A:** Ask away in the comments or on the Discord server, and we will do our best to respond.
 
 ![](https://i.imgur.com/j8YAnhl.png)
 
