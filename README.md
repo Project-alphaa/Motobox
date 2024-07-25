@@ -7,7 +7,7 @@
 [![](https://img.shields.io/badge/Discord-6a6a6a?style=for-the-badge&labelColor=272727&logo=discord)](https://discord.gg/rtEGCzbZym)
 
 ### **📘 Description**
-A driving simulator where you can customize your vehicles with a variety of wheels and engines. The mod adds more than three vehicles, including powered vehicles and a useful trailer for practical use. You can explore, transport, and race with these vehicles. Modify each vehicle with unique engines and wheels to adjust their speed and adaptability to different terrains. This mod also supports controllers with MidnightControls, allowing you to drive the vehicles using a controller.
+Experience a driving simulator where you can fully customize your vehicles, including powered options and a useful trailer, with a range of wheels and engines for practical use. Explore, transport, and race with these vehicles, each modifiable to enhance speed and adaptability to various terrains. This mod also supports controllers via MidnightControls, allowing you to drive with ease using a controller.
 
 **Note:** This is a fork of [Automobility](https://modrinth.com/mod/automobility) with our own spin on things, we had permission to do it.
 
