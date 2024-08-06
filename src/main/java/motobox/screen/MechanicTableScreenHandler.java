@@ -67,7 +67,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
 
     public Optional<MechanicTableRecipe> getSelectedRecipe() {
         int id = this.selectedRecipe.get();
-        return (id >= 0 && this.recipes.size() > 0 && id < this.recipes.size()) ? Optional.of(this.recipes.get(id)) : Optional.empty();
+        return (id >= 0 && !this.recipes.isEmpty() && id < this.recipes.size()) ? Optional.of(this.recipes.get(id)) : Optional.empty();
     }
 
     public int getSelectedRecipeId() {
@@ -85,7 +85,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
 
         this.getSelectedRecipe().ifPresent(recipe -> {
             if (recipe.matches(this.inputInv, this.world)) {
-                this.outputSlot.setStack(recipe.getOutput().copy());
+                this.outputSlot.setStack(recipe.getOutput(this.world.getRegistryManager()).copy());
             } else {
                 this.outputSlot.setStack(ItemStack.EMPTY);
             }
@@ -112,8 +112,8 @@ public class MechanicTableScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public void close(PlayerEntity player) {
-        super.close(player);
+    public void onClosed(PlayerEntity player) {
+        super.onClosed(player);
 
         this.outputSlot.setStack(ItemStack.EMPTY);
         this.context.run((world, pos) -> this.dropInventory(player, this.inputInv));
@@ -141,7 +141,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
 
             // Items transferred out of output slot
             if (fromSlotId == this.outputSlot.id) {
-                fromItem.onCraft(fromStack, player.world, player);
+                fromItem.onCraft(fromStack, player.getWorld(), player);
                 if (!this.insertItem(fromStack, this.playerInvSlot, this.playerInvSlot + 36, true)) {
                     return ItemStack.EMPTY;
                 }
@@ -205,7 +205,7 @@ public class MechanicTableScreenHandler extends ScreenHandler {
 
             MechanicTableScreenHandler.this.getSelectedRecipe()
                     .ifPresent(recipe -> {
-                        recipe.craft(MechanicTableScreenHandler.this.inputInv);
+                        recipe.craft(MechanicTableScreenHandler.this.inputInv, MechanicTableScreenHandler.this.world.getRegistryManager());
                         stack.getItem().onCraft(stack, player.getWorld(), player);
                         MechanicTableScreenHandler.this.updateRecipeState();
                     });

@@ -55,7 +55,7 @@ public abstract class AbstractUfoEntity extends Entity implements GeoEntity {
         if (this.isLogicalSideForUpdatingMovement()) {
             this.updateInterpolatedPose();
             this.decayVelocity();
-            if (this.world.isClient) {
+            if (this.getWorld().isClient) {
                 this.applyInput();
             }
             this.move(MovementType.SELF, this.getVelocity());
@@ -63,7 +63,7 @@ public abstract class AbstractUfoEntity extends Entity implements GeoEntity {
             this.setVelocity(Vec3d.ZERO);
 
             // TODO radius
-            List<PlayerEntity> collisions = this.world.getEntitiesByClass(PlayerEntity.class, this.getBoundingBox().withMinY(this.getBoundingBox().maxY - 0.1), entity -> true);
+            List<PlayerEntity> collisions = this.getWorld().getEntitiesByClass(PlayerEntity.class, this.getBoundingBox().withMinY(this.getBoundingBox().maxY - 0.1), entity -> true);
             for (PlayerEntity player : collisions) {
                 player.setPosition(player.getPos().getX(), this.getBoundingBox().getMax(Axis.Y), player.getPos().getZ());
                 player.setVelocity(player.getVelocity().getX(), 0, player.getVelocity().getZ());
@@ -105,19 +105,19 @@ public abstract class AbstractUfoEntity extends Entity implements GeoEntity {
     private void applyInput() {
         if (!this.hasPassengers()) return;
 
-        this.setYaw(-this.getPrimaryPassenger().getHeadYaw());
+        this.setYaw(-this.getControllingPassenger().getHeadYaw());
 
         float fockwardVelocity = 0.0f; // FOrward and baCKward = fockward
-        if (UfoInput.pressingForward()) fockwardVelocity += 0.05;
-        if (UfoInput.pressingBackward()) fockwardVelocity -= 0.05;
+        if (UfoInput.pressingForward()) fockwardVelocity += 0.05F;
+        if (UfoInput.pressingBackward()) fockwardVelocity -= 0.05F;
 
         float sidewaysVelocity = 0.0f;
-        if (UfoInput.pressingRight()) sidewaysVelocity += 0.05;
-        if (UfoInput.pressingLeft()) sidewaysVelocity -= 0.05;
+        if (UfoInput.pressingRight()) sidewaysVelocity += 0.05F;
+        if (UfoInput.pressingLeft()) sidewaysVelocity -= 0.05F;
 
         float verticalVelocity = 0.0f;
-        if (UfoInput.pressingUp()) verticalVelocity += 0.05;
-        if (UfoInput.pressingDown()) verticalVelocity -= 0.05;
+        if (UfoInput.pressingUp()) verticalVelocity += 0.05F;
+        if (UfoInput.pressingDown()) verticalVelocity -= 0.05F;
 
         this.setVelocity(
                 this.getVelocity().add(
@@ -154,7 +154,7 @@ public abstract class AbstractUfoEntity extends Entity implements GeoEntity {
         if (player.shouldCancelInteraction()) {
             return ActionResult.PASS;
         }
-        if (!this.world.isClient) {
+        if (!this.getWorld().isClient) {
             return player.startRiding(this) ? ActionResult.CONSUME : ActionResult.PASS;
         }
         return ActionResult.SUCCESS;
@@ -176,8 +176,8 @@ public abstract class AbstractUfoEntity extends Entity implements GeoEntity {
     }
 
     @Override
-    public Entity getPrimaryPassenger() {
-        return this.getFirstPassenger();
+    public LivingEntity getControllingPassenger() {
+        return this.getFirstPassenger() instanceof LivingEntity living ? living : null;
     }
 
     @Override

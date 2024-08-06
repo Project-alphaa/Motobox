@@ -36,7 +36,7 @@ public class VehicleItem extends Item {
             data.read(stack.getOrCreateSubNbt("Vehicle"));
             var e = new VehicleEntity(MotoboxEntities.VEHICLE_ENTITY, context.getWorld());
             var pos = context.getHitPos();
-            e.refreshPositionAndAngles(pos.x, pos.y, pos.z, context.getPlayerFacing().asRotation(), 0);
+            e.refreshPositionAndAngles(pos.x, pos.y, pos.z, context.getSide().getOpposite().asRotation(), 0);
             e.setComponents(data.getFrame(), data.getWheel(), data.getEngine());
             context.getWorld().spawnEntity(e);
             stack.decrement(1);

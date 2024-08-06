@@ -22,15 +22,17 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.resource.featuretoggle.FeatureSet;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 // TODO fix player not rotating when vehicle rotating
 public class Motobox implements ModInitializer {
     public static final String MOD_ID = "motobox";
 
-    public static final ItemGroup GROUP = FabricItemGroup.builder(id("motobox")).icon(AUtils::createGroupIcon).entries((enabledFeatures, entries, operatorEnabled) -> {
+    public static final ItemGroup GROUP = FabricItemGroup.builder().icon(AUtils::createGroupIcon).entries((enabledFeatures, entries) -> {
         for (Item item : Registries.ITEM) {
             if (item instanceof GenericMotoboxItem) {
                 entries.add(item);
@@ -42,8 +44,8 @@ public class Motobox implements ModInitializer {
                 vehicleComponentItem.appendStacks(entries);
             }
         }
-    }).build();
-    public static final ItemGroup COURSE_ELEMENTS = FabricItemGroup.builder(id("motobox_course_elements")).icon(AUtils::createCourseElementsIcon).entries((enabledFeatures, entries, operatorEnabled) -> {
+    }).displayName(Text.translatable("itemGroup.motobox.motobox")).build();
+    public static final ItemGroup COURSE_ELEMENTS = FabricItemGroup.builder().icon(AUtils::createCourseElementsIcon).entries((enabledFeatures, entries) -> {
         for (Item item : Registries.ITEM) {
             if (item instanceof CourseElementItem) {
                 entries.add(item);
@@ -54,12 +56,12 @@ public class Motobox implements ModInitializer {
                 }
             }
         }
-    }).build();
-    public static final ItemGroup PREFABS = FabricItemGroup.builder(id("motobox_prefabs")).icon(AUtils::createPrefabsIcon).entries((enabledFeatures, entries, operatorEnabled) -> {
+    }).displayName(Text.translatable("itemGroup.motobox.motobox_course_elements")).build();
+    public static final ItemGroup PREFABS = FabricItemGroup.builder().icon(AUtils::createPrefabsIcon).entries((enabledFeatures, entries) -> {
         for (var prefab : VehicleItem.PREFABS) {
             entries.add(prefab.toStack());
         }
-    }).build();
+    }).displayName(Text.translatable("itemGroup.motobox.motobox_prefabs")).build();
 
     public static final TagKey<Block> SLOPES = TagKey.of(Registries.BLOCK.getKey(), id("slopes"));
     public static final TagKey<Block> STEEP_SLOPES = TagKey.of(Registries.BLOCK.getKey(), id("steep_slopes"));
@@ -67,9 +69,9 @@ public class Motobox implements ModInitializer {
     public static final TagKey<Block> STICKY_SLOPES = TagKey.of(Registries.BLOCK.getKey(), id("sticky_slopes"));
 
     public static final ScreenHandlerType<MechanicTableScreenHandler> MECHANIC_SCREEN =
-            Registry.register(Registries.SCREEN_HANDLER, Motobox.id("mechanic_table"), new ScreenHandlerType<>(MechanicTableScreenHandler::new));
+            Registry.register(Registries.SCREEN_HANDLER, Motobox.id("mechanic_table"), new ScreenHandlerType<>(MechanicTableScreenHandler::new, FeatureSet.empty()));
     public static final ScreenHandlerType<SingleSlotScreenHandler> SINGLE_SLOT_SCREEN =
-            Registry.register(Registries.SCREEN_HANDLER, Motobox.id("single_slot"), new ScreenHandlerType<>(SingleSlotScreenHandler::new));
+            Registry.register(Registries.SCREEN_HANDLER, Motobox.id("single_slot"), new ScreenHandlerType<>(SingleSlotScreenHandler::new, FeatureSet.empty()));
     private static MinecraftServer server;
 
     public static MinecraftServer server() {
@@ -88,6 +90,11 @@ public class Motobox implements ModInitializer {
         PayloadPackets.init();
         MotoboxData.setup();
         ControllerUtils.initMidnightControlsHandler();
+
+        // Register Item Group
+        Registry.register(Registries.ITEM_GROUP, Motobox.id("motobox"), GROUP);
+        Registry.register(Registries.ITEM_GROUP, Motobox.id("course_elements"), COURSE_ELEMENTS);
+        Registry.register(Registries.ITEM_GROUP, Motobox.id("prefabs"), PREFABS);
 
         ServerLifecycleEvents.SERVER_STARTING.register(server -> Motobox.server = server);
 

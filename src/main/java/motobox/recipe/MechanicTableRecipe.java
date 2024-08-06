@@ -8,15 +8,14 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 public class MechanicTableRecipe implements Recipe<SimpleInventory>, Comparable<MechanicTableRecipe> {
     public static final Identifier ID = Motobox.id("mechanic_table");
@@ -50,7 +49,7 @@ public class MechanicTableRecipe implements Recipe<SimpleInventory>, Comparable<
     }
 
     @Override
-    public ItemStack craft(SimpleInventory inv) {
+    public ItemStack craft(SimpleInventory inv, DynamicRegistryManager registryManager) {
         for (var ing : this.ingredients.keySet()) {
             int count = ingredients.get(ing);
             for (int i = 0; i < inv.size(); i++) {
@@ -71,7 +70,7 @@ public class MechanicTableRecipe implements Recipe<SimpleInventory>, Comparable<
     }
 
     @Override
-    public ItemStack getOutput() {
+    public ItemStack getOutput(DynamicRegistryManager registryManager) {
         return this.result;
     }
 
